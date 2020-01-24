@@ -1,6 +1,6 @@
 ---
 # Number of nifi nodes
-replicaCount: 1
+replicaCount: 3
 
 ## Set default image, imageTag, and imagePullPolicy. 
 ## ref: https://hub.docker.com/r/apache/nifi/
@@ -109,7 +109,7 @@ sidecar:
 ## ref: http://kubernetes.io/docs/user-guide/persistent-volumes/
 ##
 persistence:
-  enabled: false
+  enabled: true
 
   # When creating persistent storage, the NiFi helm chart can either reference an already-defined
   # storage class by name, such as "standard" or can define a custom storage class by specifying
